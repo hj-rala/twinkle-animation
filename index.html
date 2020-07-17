@@ -1,0 +1,81 @@
+<style type="text/css">
+.lecturerSList ul li {float:left; width:25%; margin:125px 0 0 0;}
+.lecturerSList ul li .wbox {width:240px; margin:0 auto;}
+.lecturerSList ul li .name {font-size:26px; color:#1b1b1c; font-weight:600; line-height:1.2; letter-spacing:2px;}
+.lecturerSList ul li .pic {position:relative; width:240px; height:240px; background:#dde2ed; border-radius:100%; margin:50px 0 0 0; -webkit-transition: all .5s ease;-moz-transition: all .5s ease;-ms-transition: all .5s ease;-o-transition: all .5s ease;transition: all .5s ease;}
+.lecturerSList ul li .pic img {position:absolute; right:0; bottom:0; width:268px;}
+
+.lecturerSList ul li .pic .profile {position:absolute; right:-40px; bottom:-10px; width:124px; height:124px; background:#454fb7; border-radius:100%; text-align:center; transform:scale(0,0); -webkit-transition: all .5s ease;-moz-transition: all .5s ease;-ms-transition: all .5s ease;-o-transition: all .5s ease;transition: all .5s ease;}
+.lecturerSList ul li .pic .profile:after {content:''; position:absolute; right:0; top:0; width:124px; height:124px; background:#454fb7; border-radius:100%; z-index:10;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+}
+.lecturerSList ul li .pic .profile span {display:block; width:100%; font-family:'montserrat'; font-size:16px; color:#fff; font-weight:500; line-height:1.2; letter-spacing:2px; padding:54px 0 0 0;}
+body.hoverOk .lecturerSList ul li:hover .pic {background:#c6d5f6; box-shadow:10px 10px 10px rgba(0, 0, 0, 0.05);}
+body.hoverOk .lecturerSList ul li:hover .pic .profile {transform:scale(1);}
+body.hoverOk .lecturerSList ul li:hover .pic .profile:after {
+-webkit-animation-name: twinkle;
+animation-name: twinkle;
+-webkit-animation-duration: 1.4s;
+animation-duration: 1.4s;
+-webkit-animation-timing-function: linear;
+animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;}
+ 
+/* twinkle */
+@-webkit-keyframes twinkle {
+35% {-webkit-transform: scale(1.2);transform: scale(1.2);opacity:0.3;}
+75% {-webkit-transform: scale(1.4);transform: scale(1.4);opacity:0;}
+100% {-webkit-transform: scale(1);transform: scale(1);opacity:0;}
+}
+@keyframes twinkle {
+35% {-webkit-transform: scale(1.2);transform: scale(1.2);opacity:0.3;}
+75% {-webkit-transform: scale(1.4);transform: scale(1.4);opacity:0;}
+100% {-webkit-transform: scale(1);transform: scale(1);opacity:0;}
+}
+
+
+</style>
+
+
+
+
+<body class="hoverOk">
+
+
+
+<div class="lecturerSList">
+	<ul>
+		<li>
+			<div class="wbox">
+				<a href="">
+					<div class="pic">
+						HELLO WORLD
+						<div class="profile"><span>PROFILE</span></div>
+					</div>
+				</a>
+			</div>
+		</li>
+		<li>
+			<div class="wbox">
+				<a href="">
+					<div class="pic">
+						HELLO WORLD
+						<div class="profile"><span>PROFILE</span></div>
+					</div>
+				</a>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
+
+</body>
+
+
